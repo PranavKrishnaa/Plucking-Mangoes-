@@ -19,8 +19,4 @@ class Launcher{
         this.sling.bodyA = body;
     }
     
-    display(){
-        
-    }
-    
 }

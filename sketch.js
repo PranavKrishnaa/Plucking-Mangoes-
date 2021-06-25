@@ -15,7 +15,7 @@ var launcherObject;
 var launchForce = 100;
 
 function preload(){
-	boy=loadImage("boy.png");
+	boy=loadImage("images/boy.png");
   }
 
 function setup() {
@@ -94,14 +94,14 @@ Matter.Body.setPosition(stoneObj.body,{x:mouseX,y:mouseY});
 
 //create mouseReleased function here
 function mouseReleased(){
-slingShot.fly();
+launcherObject.fly();
 }
 
 //create keyPressed function here
 function keyPressed(){
   if(keyCode === 32){
     Matter.Body.setPosition(stoneObj, {x:235,y:420})
-    launcherObject.attach(stoneObj.body); 
+    launcherObject.Launch(stoneObj.body); 
   }
 }
 

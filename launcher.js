@@ -18,5 +18,7 @@ class Launcher{
      attach(body){
         this.sling.bodyA = body;
     }
-    
+    display(){
+        
+    }
 }
